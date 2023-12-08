@@ -31,6 +31,9 @@ MANIFEST
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
+#executáveis
+*.exe
+
 
 # Installer logs
 pip-log.txt
@@ -128,6 +131,28 @@ ENV/
 env.bak/
 venv.bak/
 
+pyenv
+pyvenv.cfg
+
+# Ignorar arquivos pywin
+pywin*
+pywin32
+
+# Ignorar o arquivo kernel.json
+kernel.json
+
+
+
+
+#ignorar ativação e desativação
+.bat
+.ps1
+activate
+activate.bat
+activate.ps1
+deactivate.bat
+
+
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -158,3 +183,7 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+.config/
+.lesson/
+.upm/
